@@ -1,5 +1,7 @@
 import os
+from dotenv import load_dotenv
 
-BOT_TOKEN = "8285865196:AAG9exzsvaYtWeA5rSkZZrA3ce-0F9kGOKI"
-ADMIN_ID = 6313092609  # Admin telegram ID
-DB_PATH = "shop.db"
+# .env fayldan o‘qish
+load_dotenv()
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
